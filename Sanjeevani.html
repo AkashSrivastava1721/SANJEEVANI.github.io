@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <title>
+            SANJEEVANI
+    </title>
+    <div class ="heading">
+        <h1>
+            SANJEEVANI THE HEALTH PREDICTOR
+        </h1>
+    </div>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body
+            {
+                background-image: url(background.jpg);
+                background-position: center;
+                background-size: cover;
+                font-family: sans-serif;
+                margin-top: 80px;
+                margin-bottom: 40px;
+            }
+            .heading
+            {
+                width: 800px;
+                background-color: rgb(0,0,0,0.8);
+                margin: auto;
+                color: #FFFFFF;
+                padding: 10px 0px 10px 0px;
+                text-align: center;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .intro
+            {
+                background-color: rgb(0,0,0,0.5);
+                margin: 100px;
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                text-align: center;
+                color: #FFFFFF;;
+                padding: 10px 0px 10px 0px;
+                border-radius: 15px 15px 15px 15px;
+                font-size: small;
+            }
+            .personal
+            {
+                width: 800px;
+                background-color: rgb(0,0,0,0.8);
+                margin: auto;
+                color: #FFFFFF;
+                padding: 10px 0px 10px 0px;
+                text-align: center;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .pform
+            {
+                text-align: center;
+                background-color: rgb(0,0,0,0.5);
+                color: wheat;
+                border-radius: 15px 15px 15px 15px;
+                margin: 100px;
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                font-size:large;
+            }
+            .health
+            {
+                width: 800px;
+                background-color: rgb(0,0,0,0.8);
+                margin: auto;
+                color: #FFFFFF;
+                padding: 10px 0px 10px 0px;
+                text-align: center;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .options
+            {
+                text-align: justify;
+                font-size: smaller;
+                color: white;
+            }
+            .option
+            {
+                text-align: center;
+                font-size: smaller;
+                color: white;
+            }
+            .in
+            {
+                text-align: center;
+                background-color: rgb(0,0,0,0.5);
+                color:wheat;
+                border-radius: 15px 15px 15px 15px;
+                margin: 100px;
+                margin-top: 20px; 
+                margin-bottom: 0px; 
+                font-size: large;
+            }
+            from
+            {
+                padding: 50px;
+            }
+            .btn
+            {
+                text-align: center;
+                background-color: #3BAF9F;
+                display: block;
+                margin: 20px 0px 0px 20px;
+                border-radius: 12px;
+                border: 2px solid #366473;
+                padding: 14px 110px;
+                outline: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.25px;
+                font-size: xx-large;
+            } 
+            .column1
+            {
+                text-align: justify;
+                background-color: rgb(0,0,0,0.5);
+                color: wheat;
+                border-radius: 0px 0px 0px 0px;
+                margin: 10px;
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                font-size:large;
+                float: left;
+                width: 25%;
+            }
+            .column2
+            {
+                text-align: justify;
+                background-color: rgb(0,0,0,0.5);
+                color: wheat;
+                border-radius: 0px 0px 0px 0px;
+                margin: 0px;
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                margin-right: 10px;
+                font-size:large;
+                float:right;
+                width: 28.5%;
+            }
+            .row:after 
+            {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            </style>
+    </head>
+    <body>
+        <form action="\Sanjeevani.php" method="POST">
+            <div class="intro">
+                <p>
+                    Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).It was first identified in December 2019 in Wuhan, China, and has since spread globally, resulting in an ongoing pandemic.As of 23 May 2020, more than 5.23 million cases have been reported across 188 countries and territories, resulting in more than 338,000 deaths. More than 2.07 million people have recovered.
+                    Common symptoms include fever, cough, fatigue, shortness of breath, and loss of smell and taste.While the majority of cases result in mild symptoms, some progress to acute respiratory distress syndrome (ARDS) likely precipitated by cytokine storm,multi-organ failure, septic shock, and blood clots.The time from exposure to onset of symptoms is typically around five days but may range from two to fourteen days.<br>
+                </p>
+            </div>
+            <div class = personal>
+                <h3>Kindly Fill Your Personal Information:</h3>
+            </div>
+            <div class = pform>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email Id:</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <label for="phnoe">Phone no:</label><br>
+                <input type="text" id="phno" name="phno" required><br>
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" required><br>
+            </div>
+            <div class = health>
+                <h3>Kindly Fill Your Health Information:</h3>
+            </div>
+                <div class="row">
+                        <div class="column1">
+                                <p required> Enter your Body_Temperature  </p>
+                                <div class="options">
+                                    <input type="radio" id="Body_Temperature" name="Body_Temperature" required value="0">
+                                    <label for="Body_Temperature">temp<=98.6 F</label><br>
+                                    <input type="radio" id="Body_Temperature" name="Body_Temperature" required value="0.5">
+                                    <label for="Body_Temperature">temp between 98.6 F and 100 F</label><br>
+                                    <input type="radio" id="Body_Temperature" name="Body_Temperature" required value="1">
+                                    <label for="Body_Temperature">temp >100 F</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Headache </p>
+                                <div class="options">
+                                    <input type="radio" id="Headache" name="Headache" required value="0">
+                                    <label for="Headache">none</label><br>
+                                    <input type="radio" id="Headache" name="Headache" required value="0.5">
+                                    <label for="Headache">mild</label><br>
+                                    <input type="radio" id="Headache" name="Headache" required value="1">
+                                    <label for="Headache">high</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Body_Pain </p>
+                                <div class="options">
+                                    <input type="radio" id="Body_Pain" name="Body_Pain" required value="0">
+                                    <label for="Body_Pain">none</label><br>
+                                    <input type="radio" id="Body_Pain" name="Body_Pain" required value="0.5">
+                                    <label for="Body_Pain">mild</label><br>
+                                    <input type="radio" id="Body_Pain" name="Body_Pain" required value="1">
+                                    <label for="Body_Pain">high</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Ease_of_Sneeze </p>
+                                <div class="options">
+                                    <input type="radio" id="Ease_of_Sneeze" name="Ease_of_Sneeze" required value="0">
+                                    <label for="Ease_of_Sneeze">easy</label><br>
+                                    <input type="radio" id="Ease_of_Sneeze" name="Ease_of_Sneeze" required value="0.5">
+                                    <label for="Ease_of_Sneeze">medium</label><br>
+                                    <input type="radio" id="Ease_of_Sneeze" name="Ease_of_Sneeze" required value="1">
+                                    <label for="Ease_of_Sneeze">difficult</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Dry_Cough </p>
+                                <div class="options">
+                                    <input type="radio" id="Dry_Cough" name="Dry_Cough" required value="0">
+                                    <label for="Dry_Cough">none</label><br>
+                                    <input type="radio" id="Dry_Cough" name="Dry_Cough" required value="0.5">
+                                    <label for="Dry_Cough">mild</label><br>
+                                    <input type="radio" id="Dry_Cough" name="Dry_Cough" required value="1">
+                                    <label for="Dry_Cough">high</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Throat_Pain </p>
+                                <div class="options">
+                                    <input type="radio" id="Throat_Pain" name="Throat_Pain" required value="0">
+                                    <label for="Throat_Pain">none</label><br>
+                                    <input type="radio" id="Throat_Pain" name="Throat_Pain" required value="0.5">
+                                    <label for="Throat_Pain">mild</label><br>
+                                    <input type="radio" id="Throat_Pain" name="Throat_Pain" required value="1">
+                                    <label for="Throat_Pain">high</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Suffocation </p>
+                                <div class="options">
+                                    <input type="radio" id="Suffocation" name="Suffocation" required value="0">
+                                    <label for="Suffocation">easy</label><br>
+                                    <input type="radio" id="Suffocation" name="Suffocation" required value="0.5">
+                                    <label for="Suffocation">medium</label><br>
+                                    <input type="radio" id="Suffocation" name="Suffocation" required value="1">
+                                    <label for="Suffocation">hard</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Smell_Power </p>
+                                <div class="options">
+                                    <input type="radio" id="Smell_Power" name="Smell_Power" required value="0">
+                                    <label for="Smell_Power">able to smell</label><br>
+                                    <input type="radio" id="Smell_Power" name="Smell_Power" required value="0.5">
+                                    <label for="Smell_Power">issues while smelling</label><br>
+                                    <input type="radio" id="Smell_Power" name="Smell_Power" required value="1">
+                                    <label for="Smell_Power">do not able to smell</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Taste_Power </p>
+                                <div class="options">
+                                    <input type="radio" id="Taste_Power" name="Taste_Power"required  value="0">
+                                    <label for="Taste_Power">able to taste</label><br>
+                                    <input type="radio" id="Taste_Power" name="Taste_Power" required value="0.5">
+                                    <label for="Taste_Power">issues while tasting</label><br>
+                                    <input type="radio" id="Taste_Power" name="Taste_Power" required value="1">
+                                    <label for=" Taste_Power">do not able to taste</label><br>
+                                </div>
+                                <br>
+                        </div>
+                        <div class="column2">
+                                <p required> Enter your Stomach_Pain </p>
+                                <div class="options">
+                                    <input type="radio" id="Stomach_Pain" name="Stomach_Pain" required value="0">
+                                    <label for="Stomach_Pain">none</label><br>
+                                    <input type="radio" id="Stomach_Pain" name="Stomach_Pain" required value="0.5">
+                                    <label for="Stomach_Pain">mild</label><br>
+                                    <input type="radio" id="Stomach_Pain" name="Stomach_Pain" required value="1">
+                                    <label for="Stomach_Pain">hard</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Body_Weakness </p>
+                                <div class="options">
+                                    <input type="radio" id="Body_Weakness" name="Body_Weakness"required value="0">
+                                    <label for="Body_Weakness">active</label><br>
+                                    <input type="radio" id="Body_Weakness" name="Body_Weakness" required value="0.5">
+                                    <label for="Body_Weakness">mild pain</label><br>
+                                    <input type="radio" id="Body_Weakness" name="Body_Weakness" required value="1">
+                                    <label for="Body_Weakness">high pain</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Mental_Weakness </p>
+                                <div class="options">
+                                    <input type="radio" id="Mental_Weakness" name="Mental_Weakness" required value="0">
+                                    <label for="Mental_Weakness">active</label><br>
+                                    <input type="radio" id="Mental_Weakness" name="Mental_Weakness" required value="0.5">
+                                    <label for="Mental_Weakness">mild pain</label><br>
+                                    <input type="radio" id="Mental_Weakness" name="Mental_Weakness" required value="1">
+                                    <label for="Mental_Weakness">high pain</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Skin_Rash </p>
+                                <div class="options">
+                                    <input type="radio" id="Skin_Rashes" name="Skin_Rashes" required value="0">
+                                    <label for="Skin_Rashes">no</label><br>
+                                    <input type="radio" id="Skin_Rashes" name="Skin_Rashes" required value="0.5">
+                                    <label for="Skin_Rashes">small</label><br>
+                                    <input type="radio" id="Skin_Rashes" name="Skin_Rashes" required value="1">
+                                    <label for="Skin_Rashes">large</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Breathing_Level </p>
+                                <div class="options">
+                                    <input type="radio" id="Breathing_Level" name="Breathing_Level" required value="0">
+                                    <label for="Breathing_Level">easy</label><br>
+                                    <input type="radio" id="Breathing_Level" name="Breathing_Level" required value="0.5">
+                                    <label for="Breathing_Level">medium</label><br>
+                                    <input type="radio" id="Breathing_Level" name="Breathing_Level" required value="1">
+                                    <label for="Breathing_Level">difficult</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Using_AC_at_home </p>
+                                <div class="options">
+                                    <input type="radio" id="Using_AC_at_home" name="Using_AC_at_home" required value="0">
+                                    <label for="Using_AC_at_home">not using</label><br>
+                                    <input type="radio" id="Using_AC_at_home" name="Using_AC_at_home" required value="0.5">
+                                    <label for="Using_AC_at_home">only at night</label><br>
+                                    <input type="radio" id="Using_AC_at_home" name="Using_AC_at_home" required value="1">
+                                    <label for="Using_AC_at_home">24 hours</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Age </p>
+                                <div class="options">
+                                    <input type="radio" id="Age" name="Age" required value="0">
+                                    <label for="Age">Age between 5 and 55</label><br>
+                                    <input type="radio" id="Age" name="Age" required value="0.5">
+                                    <label for="Age">Age between 55 and 70</label><br>
+                                    <input type="radio" id="Age" name="Age" required value="1">
+                                    <label for="Age">Age between 0 and 5 and Age greater than 70</label><br>
+                                </div>
+                                <br>
+                                <p required> Enter your Zone </p>
+                                <div class="options">
+                                    <input type="radio" id="Zone" name="Zone" required value="0">
+                                    <label for="Zone">Green</label><br>
+                                    <input type="radio" id="Zone" name="Zone" required value="0.5">
+                                    <label for="Zone">Orange</label><br>
+                                    <input type="radio" id="Zone" name="Zone" required value="1">
+                                    <label for="Zone">Red</label><br>
+                                <br>
+                                </div>
+                                <p required> Enter your Sleep </p>
+                                <div class="options">
+                                    <input type="radio" id="Sleep" name="Sleep" required value="0">
+                                    <label for="Sleep">Greater than 8 hrs</label><br>
+                                    <input type="radio" id="Sleep" name="Sleep" required value="0.5">
+                                    <label for="Sleep">Less than 8 hrs</label><br>
+                                    <input type="radio" id="Sleep" name="Sleep" required value="1">
+                                    <label for="Sleep">Do not sleep </label><br>
+                                </div>
+                                <br>
+                        </div>
+                </div>
+                <div class="in">
+                <p> Enter your Already a patient </p>
+                <div class="option">
+                    <input type="radio" id="in19" name="in19" required value="0">
+                    <label for="in19">No</label>
+                    <input type="radio" id="in19" name="in19" required value="1">
+                    <label for="in19">Yes</label><br>
+                </div>
+                <br>
+                </div>
+            <div class= "btn">
+                <input type="submit" value="Submit"><br>
+            </div>
+    </body>
+</html>
